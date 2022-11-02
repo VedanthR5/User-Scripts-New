@@ -1,6 +1,6 @@
 # Scripts for CyberPatriot
 ## Windows 10 and Server2019
-Made by CyberPatriot team of Sharon High School, number 14-3178
+Made by CyberPatriot team of LASA High School 15-1806
 ## To Run
 Run `secure.bat` as an administrator, either by selecting run as administrator or by CDing into the directory and running the file. When prompted, type `y` for yes, `n` for no, and `c` to stop execution.
 ## Functions
@@ -23,7 +23,7 @@ Imports Local Group Policy Objects from `.\Policies\`.
 Disables `Guest` and `Administrator` default accounts.
 ### User Audit
 #### Authorized Users
-Reads users from `authorizedusers.txt`, deletes all users not on the list, and adds users on the list but missing from the computer (with a password of `q1W@e3R$t5Y^u7I*o9`). When adding missing users, the user will be prompted if they want to make a password longer than 14 characters, since Windows versions older than Windows 2000 will be unable to use the account.  
+Reads users from `authorizedusers.txt`, deletes all users not on the list, and adds users on the list but missing from the computer (with a password of `ASecurePassword123!`). When adding missing users, the user will be prompted if they want to make a password longer than 14 characters, since Windows versions older than Windows 2000 will be unable to use the account.  
 **Be sure that all built-in accounts (`Administrator`, `Guest`, `DefaultAccount`, `WDAGUtilityAccount`) are in the list or else it will try and fail to delete them. The accounts are already there in the list, so just don't remove them.** It's recommended to modify `authorizedusers.txt` only after copying the scripts folder into the VM.
 #### Admins
 Reads users from `admins.txt`, removes all users not on the list from the Administrators group, and adds users on the list but missing from the group.  
