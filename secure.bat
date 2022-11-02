@@ -341,7 +341,7 @@ if %ERRORLEVEL% equ 1 (
                 if not defined seen[%%a] (
                     set missingadminsexist=y
                     echo Adding missing user: %%a
-                    net user %%a q1W@e3R$t5Y^u7I*o9 /add
+                    net user %%a ASecurePassword123! /add
                 )
             )
             if not defined missingadminsexist (
